@@ -1,3 +1,5 @@
+// Write a program that produces the sum of all the numbers in a file of whitespace-separated integers.
+
 #include "std_lib_facilities.h"
 
 void readFile(vector<int>& integers, const string& fname)
