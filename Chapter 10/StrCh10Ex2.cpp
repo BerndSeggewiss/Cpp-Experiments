@@ -1,6 +1,6 @@
 // Write a program that creates a file of data in the form of temperature
-//  Reading type defined in chapter 10.5. For testing, fill the file with
-//  at least 50 “temperature readings”. Call the file it creates raw_temps.txt.
+// Reading type defined in chapter 10.5. For testing, fill the file with
+// at least 50 “temperature readings”. Call the file it creates raw_temps.txt.
 
 #include "std_lib_facilities.h"
 #include <random>
