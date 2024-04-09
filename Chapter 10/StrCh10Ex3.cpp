@@ -39,12 +39,12 @@ double calcMedian(vector<Reading>& readings)
     int n = readings.size();
     if (n % 2 == 0)
     {
-         middle1 = readings[n / 2 - 1].temperature;
-         middle2 = readings[n / 2].temperature;
+         middle1 = readings[n/2 - 1].temperature;
+         middle2 = readings[n/2].temperature;
          middle = (middle1 + middle2) / 2;
     }
     else
-        middle = readings[n / 2].temperature;
+        middle = readings[n/2].temperature;
     return middle;
 }
 
