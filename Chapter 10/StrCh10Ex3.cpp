@@ -56,7 +56,7 @@ double calcMean(vector<Reading>& readings)
     {
         sum += readings[i].temperature;
     }
-    mean = sum / n;
+    mean = sum/n;
     return mean;
 }
 
