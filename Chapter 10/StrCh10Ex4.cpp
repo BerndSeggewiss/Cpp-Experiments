@@ -41,7 +41,6 @@ Reading makeTemperatureValues()
     t++;
     char s;
     s = fahrenheit;
-    //char s = (urd(eng) < 0.5) ? 'c' : 'f';
     return Reading{ t, x , s };
 }
 
