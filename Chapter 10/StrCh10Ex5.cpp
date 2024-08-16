@@ -1,3 +1,5 @@
+//  Write the function print_year() mentioned in chapter 10.11.2. 
+
 #include "std_lib_facilities.h"
 
 struct Year
