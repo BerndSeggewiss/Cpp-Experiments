@@ -1,6 +1,5 @@
 #include "std_lib_facilities.h"
 
-
 class Roman_int
 {
 public:
