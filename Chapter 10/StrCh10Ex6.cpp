@@ -1,8 +1,8 @@
 // StrRomanIntClass.cpp :
 // Define a Roman_int class for holding Roman numerals (as ints)
-// with a << and >>. Provide Roman_int() memeber that returns the
-// int value, so that if r is Roman_int, we can write cout <<  
-// “Roman “ << r << “equals “ << r.as_int() << “\n”.
+// with a << and >>. Provide Roman_int() member that returns the
+// int value, so that if r is a Roman_int, we can write cout <<  
+// â€œRoman â€œ << r << â€œequals â€œ << r.as_int() << â€œ\nâ€.
 
 #include "ch10ex6.h"
 
