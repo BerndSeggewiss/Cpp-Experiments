@@ -36,7 +36,7 @@ int main()
 {
 	cout << "Enter a string with seperation characters: ";
 	string s;
-    string w = ",&!.";
+    	string w = ",&!.";
 	while (getline(cin, s))
 	{
 		vector<string> v = split(s, w);
