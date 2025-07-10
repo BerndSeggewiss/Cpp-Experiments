@@ -1,15 +1,24 @@
 /*
 	1. Draw a rectangle as a Rectangle and as a Polygon. Make the lines of the Polygon red
 	and the lines of the Rectangle blue.
-	2. Draw a 100-by-30 Rectangle and place the text “Howdy!” inside it.
+	2. Draw a 100-by-30 Rectangle and place the text "Howdy!" inside it.
 	3. Draw your initials 150 pixel high. Use a thick line. Draw each initial in a different color.
 	4. Draw a 3-by-3 tic-tac-toe board of alternating white and red squares.
-	5. Draw a red 1/4 -inch frame around a rectangle that is three-quarters the height of your screen and two-thirds the width.
+	5. Draw a red 1/4-inch frame around a rectangle that is three-quarters the height of your screen and two-thirds the width.
+	
+	NOTE: These exercises require FLTK graphics library.
+	To compile these exercises:
+	1. Install FLTK graphics library
+	2. Include the appropriate Graph.h and Simple_window.h headers
+	3. Link with FLTK libraries
+	4. Uncomment the includes and function implementations below
 */
 
-#include "..\..\..\OneDrive\Codesammlung\C++\Stroustr Prog - Principles and Practise Using C++\libs\Graph.h"  
-#include "..\..\..\OneDrive\Codesammlung\C++\Stroustr Prog - Principles and Practise Using C++\libs\Simple_window.h"
+#include <iostream>
+// #include "Graph.h"  
+// #include "Simple_window.h"
 
+/*
 static void Exercise1(Simple_window& win)
 {
 	auto rect = new Graph_lib::Rectangle(Point(10, 70), 100, 50);
@@ -78,7 +87,7 @@ static void Exercise5(Simple_window& win)
 {
 	int screenWidth = Fl::w();
 	int screenHeight = Fl::h();
-	// Umrechnung: 1/4 inch = 0.25 * 96 = 24 Pixel (bei 96 DPI)
+	// Conversion: 1/4 inch = 0.25 * 96 = 24 pixels (at 96 DPI)
 	int frameWidth = 24;
 	int rectWidth = screenWidth * 2 / 3;
 	int rectHeight = screenHeight * 3 / 4;
@@ -92,9 +101,14 @@ static void Exercise5(Simple_window& win)
 	win.attach(*innerRect);
 	win.wait_for_button();
 }
+*/
 
 int main()
 {
+	std::cout << "Chapter 12 Graphics exercises - requires FLTK library to run." << std::endl;
+	std::cout << "Please install FLTK and uncomment the graphics code to execute the exercises." << std::endl;
+	
+	/*
 	try
 	{
 		Point top_left{ 100, 100 };
@@ -109,4 +123,6 @@ int main()
 	{
 		cerr << "exception: " << e.what() << endl;
 	}
+	*/
+	return 0;
 }

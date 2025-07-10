@@ -1,0 +1,28 @@
+# Build artifacts
+ch9_drill
+ch10_ex1
+ch11_ex1
+ch11_ex9
+ch12_ex
+*.o
+*.exe
+
+# IDE files
+.vscode/
+.vs/
+*.vcxproj*
+*.sln
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Temporary files
+*.tmp
+*.temp
+*~
+
+# Output files from exercises
+TextLower.txt
+BinaryfileCH11Ex9.bin
+TextfileCH11Ex9_Copy.txt

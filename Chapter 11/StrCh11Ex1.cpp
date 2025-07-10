@@ -30,16 +30,13 @@ void writeDataToTextFile(const string& filename, const vector<string>& lines)
 
 int main()
 {
-	string filepath = "C:\\Users\\Win11 Pro\\Downloads";
 	string inputFilename = "Text.txt";
 	string outputFilename = "TextLower.txt";
-	string inputFullpath = filepath + "\\" + inputFilename;
-	string outputFullpath = filepath + "\\" + outputFilename;
 	try
 	{
-		vector<string> lines = readDataFromTextFile(inputFullpath);
-		writeDataToTextFile(outputFullpath, lines);
-		cout << "File opened successfully." << endl;
+		vector<string> lines = readDataFromTextFile(inputFilename);
+		writeDataToTextFile(outputFilename, lines);
+		cout << "File converted successfully from " << inputFilename << " to " << outputFilename << endl;
 	}
 	catch (const runtime_error& e) {
 		cerr << "Error: " << e.what() << endl;
