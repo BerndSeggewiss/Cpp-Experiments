@@ -32,18 +32,16 @@ int main()
     cout << "Enter filename: ";
     try 
     {
-        string filepath = "C:\\Users\\bernd\\Downloads";
         string filename;
         cin >> filename;
-        string fullFilePath = filepath + "\\" + filename;
         vector <int> integerNums;
-        readFile(integerNums, fullFilePath);
+        readFile(integerNums, filename);
         int sum = calculateSum(integerNums);
         cout << "The sum of numbers in the File is: " << sum;
     }
     catch (exception& e)
     {
-        cerr << "Exception" << e.what() << endl;
+        cerr << "Exception: " << e.what() << endl;
     }
 }
 

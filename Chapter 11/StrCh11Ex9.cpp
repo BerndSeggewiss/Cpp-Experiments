@@ -5,8 +5,6 @@
 // back.
 
 #include "std_lib.h"
-
-namespace fs = std::experimental::filesystem;
 ifstream openInputFile(const string& filePath)
 {
 	ifstream ifs(filePath, ios::binary);
@@ -25,14 +23,11 @@ ofstream openOutputFile(const string& filePath)
 
 void convertText2binary()
 {
-	string FilePath = "C:\\Users\\Win11 Pro\\Downloads";
 	string FileName = "TextfileCH11Ex9.txt";
-	string fullFilePath = FilePath + "\\" + FileName;
-	ifstream ifs = openInputFile(fullFilePath);
+	ifstream ifs = openInputFile(FileName);
 	string binaryFileName = "BinaryfileCH11Ex9.bin";
-	string binaryFilePath = FilePath + "\\" + binaryFileName;
-	ofstream ofs = openOutputFile(binaryFilePath);
-	cout << "Writing File: " << binaryFilePath << '\n';
+	ofstream ofs = openOutputFile(binaryFileName);
+	cout << "Writing File: " << binaryFileName << '\n';
 	char ch;
 	while (ifs.get(ch))
 		ofs.write(reinterpret_cast<const char*>(&ch), sizeof(ch));
@@ -40,14 +35,11 @@ void convertText2binary()
 
 void convertBinary2Text()
 {
-	string FilePath = "C:\\Users\\Win11 Pro\\Downloads";
 	string FileName = "BinaryfileCH11Ex9.bin";
-	string fullFilePath = FilePath + "\\" + FileName;
-	ifstream ifs = openInputFile(fullFilePath);
+	ifstream ifs = openInputFile(FileName);
 	string textFileName = "TextfileCH11Ex9_Copy.txt";
-	string textFilePath = FilePath + "\\" + textFileName;
-	ofstream ofs = openOutputFile(textFilePath);
-	cout << "Writing File: " << textFilePath << '\n';
+	ofstream ofs = openOutputFile(textFileName);
+	cout << "Writing File: " << textFileName << '\n';
 	char ch;
 	while (ifs.get(ch))
 		ofs.write(reinterpret_cast<const char*>(&ch), sizeof(ch));

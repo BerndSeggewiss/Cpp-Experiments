@@ -8,7 +8,7 @@ namespace Chrono941
 {
     void init_day(Date& dd, int y, int m, int d)
     {
-        if (m < 1 || m > 12 || m < 0 || d < 1 || y < 1978) error("Invalid");
+        if (m < 1 || m > 12 || d < 1 || y < 1978) error("Invalid");
         dd.y = y;
         dd.m = m;
         dd.d = d;
@@ -16,8 +16,7 @@ namespace Chrono941
 
     void add_day(Date& dd, int x)
     {
-        x = dd.d + 1;
-        dd.d = x;
+        dd.d += x;
     }
 
     ostream& operator<<(ostream& os, const Date& dd)
@@ -31,7 +30,7 @@ namespace Chrono942
     Date::Date(int y, int m, int d)
         :y(y), m(m), d(d)
     {
-        if (m < 1 || m > 12 || m < 0 || d < 1 || y < 1978) error("Invalid");
+        if (m < 1 || m > 12 || d < 1 || y < 1978) error("Invalid");
     }
 
     void Date::add_day(int x)
@@ -50,7 +49,7 @@ namespace Chrono943
     Date::Date(int y, int m, int d)
         :y(y), m(m), d(d)
     {
-        if (m < 1 || m > 12 || m < 0 || d < 1 || y < 1978) error("Invalid");
+        if (m < 1 || m > 12 || d < 1 || y < 1978) error("Invalid");
     }
 
     void Date::add_day(int n)
